@@ -4,6 +4,7 @@ pipeline {
   }
 
   environment {
+    APP = "HelloWorld"
   }
 
   stages {
