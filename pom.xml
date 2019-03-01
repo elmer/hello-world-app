@@ -12,7 +12,20 @@
 	<artifactId>hello-world-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hello-world-app</name>
-	<description>Demo project for Spring Boot</description>
+  <description>Demo project for Spring Boot</description>
+
+  <distributionManagement>
+    <repository>
+      <id>vizcayano-releases</id>
+      <url>http://nexus:8081/repository/maven-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>vizcayano-snapshots</id>
+      <url>http://nexus:8081/repository/maven-snapshots</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+  </distributionManagement>
+
 
 	<properties>
 		<java.version>1.8</java.version>
